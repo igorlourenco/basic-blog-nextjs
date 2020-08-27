@@ -1,10 +1,22 @@
 import React from "react";
-import {Text} from "@chakra-ui/core";
-import fs from 'fs';
-import path from 'path';
+import {Text, Grid} from "@chakra-ui/core";
+import Head from "next/head";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
-const Post = ({contents}) => {
-    return <Text>{contents}</Text>
+const Post = ({contents, data}) => {
+    return (
+        <>
+            <Head>
+                <title>{data.title}</title>
+                <meta title="description" content={data.description}/>
+            </Head>
+            <Grid>
+                <Text>{contents}</Text>
+            </Grid>
+        </>
+    )
 };
 
 export const getStaticPaths = async () => {
@@ -29,11 +41,14 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({params: {slug}}) => {
 
-    const contents = fs.readFileSync(path.join('posts', slug + '.md')).toString();
+    const markdownWithMetadata = fs.readFileSync( path.join( 'posts', slug + '.md' ) ).toString();
+
+    const parsedMarkdown = matter( markdownWithMetadata );
 
     return {
         props: {
-            contents
+            contents: parsedMarkdown.content,
+            data: parsedMarkdown.data
         }
     }
 };
