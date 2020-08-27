@@ -1,9 +1,10 @@
 import React from "react";
 import {Text} from "@chakra-ui/core";
 import fs from 'fs';
+import path from 'path';
 
-const Post = ({slug}) => {
-    return <Text>Link: {slug}</Text>
+const Post = ({contents}) => {
+    return <Text>{contents}</Text>
 };
 
 export const getStaticPaths = async () => {
@@ -27,9 +28,12 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({params: {slug}}) => {
+
+    const contents = fs.readFileSync(path.join('posts', slug + '.md')).toString();
+
     return {
         props: {
-            slug
+            contents
         }
     }
 };
