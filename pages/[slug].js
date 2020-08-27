@@ -4,17 +4,17 @@ import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import marked from "marked";
 
-const Post = ({contents, data}) => {
+
+const Post = ({htmlString, data}) => {
     return (
         <>
             <Head>
                 <title>{data.title}</title>
                 <meta title="description" content={data.description}/>
             </Head>
-            <Grid>
-                <Text>{contents}</Text>
-            </Grid>
+            <div dangerouslySetInnerHTML={{ __html: htmlString}}/>
         </>
     )
 };
@@ -45,9 +45,11 @@ export const getStaticProps = async ({params: {slug}}) => {
 
     const parsedMarkdown = matter( markdownWithMetadata );
 
+    const htmlString = marked(parsedMarkdown.content)
+
     return {
         props: {
-            contents: parsedMarkdown.content,
+            htmlString,
             data: parsedMarkdown.data
         }
     }
