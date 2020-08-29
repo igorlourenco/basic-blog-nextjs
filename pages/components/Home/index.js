@@ -33,3 +33,14 @@ export default function Home({slugs}) {
         </>
     )
 }
+
+export const getStaticProps = async () => {
+
+    const files = fs.readdirSync( "posts" )
+
+    return {
+        props: {
+            slugs: files.map( filename => filename.replace( ".md", "" ) )
+        }
+    }
+};
