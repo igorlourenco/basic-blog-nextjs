@@ -1,4 +1,9 @@
 body, html{
+    background-color: #fffafa;
     padding: 0;
     margin: 0;
+}
+
+nav{
+    align-content: center;
 }

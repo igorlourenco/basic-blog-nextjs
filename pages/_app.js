@@ -1,6 +1,7 @@
-import customTheme from "../styles/themes"
+import '../styles/global.css';
+import customTheme from "../styles/themes";
 import React from "react";
-import {ThemeProvider} from "@chakra-ui/core";
+import {ThemeProvider, CSSReset} from "@chakra-ui/core";
 import Head from "next/head";
 
 function MyApp({Component, pageProps}) {
@@ -10,7 +11,7 @@ function MyApp({Component, pageProps}) {
                 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
             <ThemeProvider theme={customTheme}>
-                <Component {...pageProps} />
+                    <Component {...pageProps} />
             </ThemeProvider>
         </>
     )
