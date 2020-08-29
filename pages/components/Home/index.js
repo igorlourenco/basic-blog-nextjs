@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import {Grid, Link, Text} from "@chakra-ui/core";
 import Header from "../home-page/Header";
+import fs from "fs";
 
 export default function Home({slugs}) {
 
