@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {Grid, Link, Text} from "@chakra-ui/core";
 import Header from "../home-page/Header";
 
-export default function Home({slugs}) {
+export default function Home(props) {
 
     useEffect( () => {
         if (window.netlifyIdentity) {
@@ -20,7 +20,7 @@ export default function Home({slugs}) {
         <>
             <Header></Header>
             <Grid p={4}>
-                {slugs.map( slug => {
+                {props.slugs.map( slug => {
                     return (
                         <Grid key={slug}>
                             <Link href={"/blog/" + slug}>
