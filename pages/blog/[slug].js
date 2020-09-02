@@ -1,5 +1,4 @@
 import React from "react";
-import {Text, Grid} from "@chakra-ui/core";
 import Head from "next/head";
 import fs from "fs";
 import path from "path";
