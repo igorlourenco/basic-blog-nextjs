@@ -4,7 +4,7 @@ Fala, visitante, eu fiz esse projeto com o intuito de trabalhar alguns conceitos
 
 > Caso você queira, dê uma olhada no [artigo que fiz no Medium sobre uma biblioteca de interface da hora](https://medium.com/igor-js/chakra-ui-facilitando-o-front-end-javascript-aabcade75f09).
 
-Você pode ver o projeto funcionando [clicando aqui]() e, se quiser praticar, baixe o template do projeto para brincar com as funcionalidades dele e, se quiser, pode até implementar os conceitos com os componentes de interface do artigo que citei acima. Espero que goste e obrigado por vir aqui.
+Você pode ver o projeto funcionando [clicando aqui](https://blog-basico-next-js.netlify.app) e, se quiser praticar, baixe o template do projeto para brincar com as funcionalidades dele e, se quiser, pode até implementar os conceitos com os componentes de interface do artigo que citei acima. Espero que goste e obrigado por vir aqui.
 
 --- 
 Feito com 🧡 por Igor Lourenço
