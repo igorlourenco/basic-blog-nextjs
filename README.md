@@ -1,10 +1,29 @@
-### ⚡ Blog básico com Next.js
+### ⚡ Basic blog with Next.js and Netlify CMS
 
-Fala, visitante, eu fiz esse projeto com o intuito de trabalhar alguns conceitos de React (usando Next.js): componentização, roteamento dinâmico, props estáticos, paginas dinâmicas etc. Não usei naaaada de componentes de interface nele, justamente porque foquei nos elementos do estudo. 
+###### 👾 Available in [https://basic-blog-nextjs.netlify.app](https://basic-blog-nextjs.netlify.app).
 
-> Caso você queira, dê uma olhada no [artigo que fiz no Medium sobre uma biblioteca de interface da hora](https://medium.com/igor-js/chakra-ui-facilitando-o-front-end-javascript-aabcade75f09).
+**I did this project in order to work on some ReactJS concepts (using Next.js).**
 
-Você pode ver o projeto funcionando [clicando aqui](https://blog-basico-next-js.netlify.app) e, se quiser praticar, baixe o template do projeto para brincar com as funcionalidades dele e, se quiser, pode até implementar os conceitos com os componentes de interface do artigo que citei acima. Espero que goste e obrigado por vir aqui.
+> If you want, take a look at the [article I did on Medium about a cool interface library](https://medium.com/igor-js/chakra-ui-facilitando-o-front-end-javascript-aabcade75f09).
 
---- 
-Feito com ❤️ e JavaScript por Igor Lourenço
+---
+
+##### Techologies used:
+
+* [JavaScript](https://www.javascript.com/): programming language used in the project. The life of web applications;
+* [ReactJS](https://pt-br.reactjs.org/): JavaScript library used to build web applications;
+* [Next.js](http://nextjs.org/): it is a framework from [ReactJS](https://pt-br.reactjs.org/) that I use to build my projects;
+* [Netlify CMS](https://www.netlifycms.org/): a content manage system provided by Netlify.
+
+---
+
+##### Practiced concepts:
+* Components;
+* Dynamic routes;
+* Dynamic pages;
+* Static props;
+* integration with CMS.
+
+---
+
+Made With ❤️ & JavaScript by Igor Lourenço
