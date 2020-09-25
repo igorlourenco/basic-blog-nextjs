@@ -2,7 +2,7 @@
 
 ###### 👾 Available in [https://basic-blog-nextjs.netlify.app](https://basic-blog-nextjs.netlify.app).
 
-**I did this project in order to work on some ReactJS concepts (using Next.js).**
+**I made this project in order to work on some ReactJS concepts (using Next.js).**
 
 > If you want, take a look at the [article I did on Medium about a cool interface library](https://medium.com/igor-js/chakra-ui-facilitando-o-front-end-javascript-aabcade75f09).
 
